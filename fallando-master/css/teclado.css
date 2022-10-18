@@ -1,0 +1,28 @@
+#container {
+    width: 42rem;
+    height: 18rem;
+    margin-left: -2rem;
+}
+
+#container input[type=button] {
+    /*teclas */
+    width: 9%;
+    height: 2.5rem;
+    font-size: larger;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#pantalla {
+    width: 6rem;
+    height: 6rem;
+    border: double 6px black;
+    border-radius: 10px;
+    font-size: 4.5rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin-left: 15rem;
+    margin-bottom: 0.5rem;
+}

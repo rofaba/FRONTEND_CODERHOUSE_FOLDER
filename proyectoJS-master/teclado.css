@@ -1,0 +1,33 @@
+#container{
+width: 50rem;
+height: 6rem;
+background-color: grey;
+justify-items: auto;
+border: solid 4px black;
+border-radius: 20px;
+margin-left: 2rem;
+padding: 1rem 0.5rem 0.5rem 0.5rem;
+}
+
+#container input[type=button] {
+width:7.1%;
+height:2rem;
+font-size:larger;
+font-weight: bold;
+text-transform: uppercase;
+cursor: pointer;
+border-radius: 10px;
+}
+
+#pantalla{
+
+    width: 10rem;
+    height: 10rem;
+    font-size: 10rem;
+    color: red;
+    margin-left: 2rem;
+    margin-top: 4rem;
+    text-transform: uppercase;
+    text-align: center;
+    align-items: center;
+}

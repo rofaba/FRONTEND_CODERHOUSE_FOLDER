@@ -1,0 +1,362 @@
+* {
+  font-family: "Roboto", sans-serif;
+  color: ivory;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 100, 121, 1) 22%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+
+.header {
+  height: 100 px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  column-gap: 10px;
+  flex-wrap: nowrap;
+  margin-top: 30px;
+  margin-left: 100px;
+  margin-bottom: 50px;
+}
+
+.logo {
+  width: 12rem;
+  border-radius: 10%;
+  margin: 10, 30, 10, 30px;
+}
+.logo img {
+  width: 100%;
+  border-radius: 50%;
+  margin-right: 80px;
+}
+
+.inicio h1 {
+  color: ivory;
+  font-size: 5rem;
+  /* text-shadow: 5px 5px 5px rgba(0, 212, 255, 1) ; */
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin: 30px;
+}
+
+.redes {
+  display: inline-block;
+  margin-left: 60px;
+}
+
+/* GRID INDEX
+
+.presentacion_1 {
+  display: grid;
+  grid-template-columns: repeat(3, 500px);
+  grid-template-rows: repeat(2, 500px);
+  grid-gap: 50px 50px;
+  margin-left: 200px;
+}
+
+.dos_ruedas {
+  width: 500px;
+  padding-top: 150px;
+  text-align: justify;
+  font-size: 22px;
+  
+}
+
+.sp {
+  width: 500px;
+}
+
+.prepara {
+  width: 500px;
+  padding-top: 200px;
+  text-align: justify;
+  font-size: 22px;
+}
+
+.cp {
+  width: 500px;
+}
+
+.aventura {
+  width: 500px;
+  padding-top: 150px;
+  text-align: justify;
+  font-size: 22px;
+}
+
+.ve {
+  width: 500px;
+}
+
+.presentacion_1 img {
+  width: 100%;
+}
+
+.presentacion_2 img {
+  width: 100%;
+} */
+
+/*  BOOTSTRAP GRID INDEX */
+
+.col {
+  width: 500px;
+  padding: 1rem;
+  text-align: center;
+  font-size: 22px;
+}
+.col img {
+  width: 100%;
+}
+
+/*  BOOTSTRAP GRID INDEX */
+.redes img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.redes:hover {
+  transform: scale(
+    1.5
+  ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.irHome {
+  display: inline-block;
+
+  margin-right: 1rem;
+}
+
+.contacto {
+  padding: 150px;
+  font-size: 20px;
+  background-color: transparent;
+  display: inline-block;
+}
+
+.contacto h2 {
+  font-size: 21px;
+  text-align: center;
+}
+
+.navega {
+  display: flex;
+  width: 100%;
+  height: 20rem;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 150px;
+}
+
+.navega--menu {
+  width: 28%;
+  height: 20rem;
+  margin: 12px;
+  border: 3px solid ivory;
+  border-radius: 8px;
+  background-color: transparent;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.navega--menu img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.navega--menu .hover {
+  width: 0%;
+  height: 20rem;
+  background-color: rgb(2, 0, 36, 0.6);
+  display: flex;
+  position: absolute;
+  top: 0;
+  align-items: center;
+  justify-items: center;
+  overflow: hidden;
+  transition: 0.5s all;
+}
+.hover h2 {
+  color: ivory;
+  text-shadow: 1px 1px 1px rgba(2, 0, 36);
+  align-items: center;
+}
+
+.navega--menu:hover .hover {
+  width: 50%;
+}
+
+.boton {
+  border-radius: 10 px;
+  background-color: rgba(2, 0, 36);
+  object-fit: cover;
+}
+
+#piensa {
+  text-align: center;
+  margin: 80px;
+  font-size: 40px;
+}
+
+/* GRID html viajes*/
+
+/* .cuerpo {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+
+  justify-items: center;
+  align-items: center;
+  font-size: 1rem;
+  row-gap: 30px;
+  margin-bottom: 30px;
+}
+
+.san_pedro {
+  width: 500px;
+  text-align: justify;
+  font-size: 1.5rem;
+  grid-column-start: 3;
+  grid-column-end: 5;
+}
+.san_pedro_img {
+  width: 500px;
+  grid-column-start: 5;
+  grid-column-end: 8;
+  margin-bottom: 30px;
+}
+.san_pedro_img img {
+  width: 100%;
+  height: auto;
+}
+
+.valle_elqui {
+  width: 500px;
+  text-align: justify;
+  font-size: 1.5rem;
+  grid-column: 3 / 5;
+}
+
+.valle_elqui_img {
+  width: 500px;
+  grid-column: 5 / 8;
+  margin-bottom: 30px;
+}
+.valle_elqui_img img {
+  width: 100%;
+  height: auto;
+}
+.chiloe {
+  width: 500px;
+  text-align: justify;
+  font-size: 1.5rem;
+  grid-column: 3 / 5;
+}
+
+.chiloe_img {
+  width: 500px;
+  grid-column: 5 / 8;
+  margin-bottom: 30px;
+}
+
+.chiloe_img img {
+  width: 100%;
+  height: auto;
+}
+
+.torresdelpaine {
+  width: 500px;
+  text-align: justify;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  grid-column: 3 / 5;
+}
+
+.torresdelpaine_img {
+  width: 500px;
+  grid-column: 5 / 8;
+  margin-bottom: 20px;
+  margin-bottom: 30px;
+}
+.torresdelpaine_img img {
+  width: 100%;
+  height: auto;
+} */
+
+/* FIN GRID html viajes */
+
+.servicios {
+  text-align: center;
+  font-size: 21px;
+  padding: 50px;
+}
+
+.img_servicios {
+  display: flex;
+  justify-content: center;
+}
+
+.img_servicios img {
+  width: 500px;
+  padding: 50px;
+}
+
+.nosotros {
+  text-align: center;
+  font-size: 21px;
+  padding: 50px;
+}
+
+.img_nosotros {
+  display: flex;
+  justify-content: center;
+}
+
+.img_nosotros img {
+  width: 500px;
+  padding: 50px;
+}
+
+.cuerpo--titulo {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+
+.footer {
+  width: 100%;
+  height: 2rem;
+  background-color: rgba(2, 0, 36);
+  display: flex;
+  justify-content: flex-end;
+  font-size: 20px;
+  color: ivory;
+  padding: 1rem;
+}
+.footer--medio {
+  margin-inline-end: 15px;
+  margin-left: 3rem;
+}
+
+.irHome img {
+  margin-inline-end: 15px;
+}
+.footer--imagen {
+  object-fit: auto;
+}
+.contacto--mail {
+  font-size: 20px;
+  padding-bottom: 2rem;
+}

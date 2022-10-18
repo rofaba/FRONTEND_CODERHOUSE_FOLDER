@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Juego del Ahorcado</title>
+
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hurricane&family=Poppins:ital,wght@0,400;1,100&display=swap"
+        rel="stylesheet">
+
+
+</head>
+
+<body>
+    <header>
+
+        <div class="contenedorSuperior">
+            <div id="indicadorVidas">
+                <p> Intentos disponibles</p>
+                <h1 id="numeroVidas"> 7 </h1>
+            </div>
+
+            <div class="personajeEnJuego">
+
+                <h3 id="personajeSeleccionado"> personaje </h3>
+                <div class="botones">
+                    <button id="muestraPersonaje"> Ver personaje</button>
+                    <button id="ocultaPersonaje"> Ocultar personaje</button>
+                </div>
+
+                <section id="desafioJSON">
+                    <p id="muestralo1"></p>
+                    <p id="muestralo2"></p>
+                    <p id="muestralo3"></p>
+                </section>
+
+            </div>
+
+            <div id="records">
+                <p> Puntaje</p>
+                <h1 id="puntajeActual"> 000 </h1>
+                <p> Puntaje Máximo Anterior</p>
+                <h1 id="puntajeMaximo"> 100 </h1>
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+
+        <div class="contenedorBase">
+
+
+            <div class="contenedor">
+                <div class="personajeActivo">
+                    <!-- imagen imteractiva depende del avance el juego -->
+                    <img id="jugando" src="./imagenes/homer_blanco_negro.webp" alt="Personaje_en_Juego">
+                </div>
+
+
+                <div class="bloqueBusqueda">
+                    <h4 id="palabraAdivina"> ________ </h4>
+
+                    <div class=controles>
+
+                        <div id="ingresarDatos">
+                            <input type="text" maxlength="1" id="letraUsuario" name="letraUsuario">
+
+                            <button id="botonInicio"> Probar Letra </button>
+
+                        </div>
+
+                    </div>
+                    <div id="probando">
+                        <p> Ingresa una letra </p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="mensajesJuego">
+
+                <h3 id="mensajeUsuario"> Comienza el Juego</h3>
+                <h3 id="segundoMensaje"> Ingresa una letra</h3>
+
+            </div>
+        </div>
+
+        </div>
+
+        <nav>
+
+            <div class='navegacion'>
+
+                <nav class="barraNav">
+                    <a href="./index.html" class="eleccion"> || Inicio ||</a>
+                    <a href="./personajes.html" class="eleccion"> Cambiar Personaje</a>
+                    <a href="./ingame.html" class="eleccion"> || Jugar ||</a>
+                </nav>
+            </div>
+        </nav>
+
+    </main>
+
+    <footer>Derechos Reservados</footer>
+
+
+    <script src="./script.js"></script>
+
+    <!-- <script src="./dom.js"> </script> -->
+
+</body>
+
+</html>

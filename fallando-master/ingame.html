@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Juego del Ahorcado</title>
+    <link rel="icon" href="./imagenes/favicon.png">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/teclado.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hurricane&family=Poppins:ital,wght@0,400;1,100&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="contenedorSuperior">
+            <div id="indicadorVidas">
+                <p> Intentos disponibles</p>
+                <h1 id="numeroVidas"> 10 </h1>
+            </div>
+            <div class="personajeEnJuego">
+                <h3 id="personajeSeleccionado"> personaje </h3>
+                <p id="quotes"></p>
+            </div>
+    </header>
+    <main>
+        <div class="contenedor">
+            <div>
+                <div class="personajeActivo">
+                    <img id="jugando" src="./imagenes/homer_blanco_negro.webp" alt="Personaje_en_Juego">
+                </div>
+                <div>
+                    <h4 id="palabraAdivina"> ________ </h4>
+                </div>
+            </div>
+            <div class="bloqueBusqueda">
+                <form name="container" id="container">
+                    <input type="text" maxlength="1" id="pantalla" value="">
+                    <br>
+                    <button id="botonInicio" type="button"> Probar Letra </button>
+                    <br>
+                    <input type="button" id="letraA" class="borde" value="a"
+                        onclick="document.container.pantalla.value='a'">
+                    <input type="button" id="letraB" class="borde" value="b"
+                        onclick="document.container.pantalla.value='b'">
+                    <input type="button" id="letraC" class="borde" value="c"
+                        onclick="document.container.pantalla.value='c'">
+                    <input type="button" id="letraD" class="borde" value="d"
+                        onclick="document.container.pantalla.value='d'">
+                    <input type="button" id="letraE" class="borde" value="e"
+                        onclick="document.container.pantalla.value='e'">
+                    <input type="button" id="letraF" class="borde" value="f"
+                        onclick="document.container.pantalla.value='f'">
+                    <input type="button" id="letraG" class="borde" value="g"
+                        onclick="document.container.pantalla.value='g'">
+                    <input type="button" id="letraH" class="borde" value="h"
+                        onclick="document.container.pantalla.value='h'">
+                    <input type="button" id="letraI" class="borde" value="i"
+                        onclick="document.container.pantalla.value='i'">
+                    <br>
+                    <input type="button" id="letraJ" class="borde" value="j"
+                        onclick="document.container.pantalla.value='j'">
+                    <input type="button" id="letraK" class="borde" value="k"
+                        onclick="document.container.pantalla.value='k'">
+                    <input type="button" id="letraL" class="borde" value="l"
+                        onclick="document.container.pantalla.value='l'">
+                    <input type="button" id="letraM" class="borde" value="m"
+                        onclick="document.container.pantalla.value='m'">
+                    <input type="button" id="letraN" class="borde" value="n"
+                        onclick="document.container.pantalla.value='n'">
+                    <input type="button" id="letraO" class="borde" value="o"
+                        onclick="document.container.pantalla.value='o'">
+                    <input type="button" id="letraP" class="borde" value="p"
+                        onclick="document.container.pantalla.value='p'">
+                    <input type="button" id="letraQ" class="borde" value="q"
+                        onclick="document.container.pantalla.value='q'">
+                    <input type="button" id="letraR" class="borde" value="r"
+                        onclick="document.container.pantalla.value='r'">
+                    <br>
+                    <input type="button" id="letraS" class="borde" value="s"
+                        onclick="document.container.pantalla.value='s'">
+                    <input type="button" id="letraT" class="borde" value="t"
+                        onclick="document.container.pantalla.value='t'">
+                    <input type="button" id="letraU" class="borde" value="u"
+                        onclick="document.container.pantalla.value='u'">
+                    <input type="button" id="letraV" class="borde" value="v"
+                        onclick="document.container.pantalla.value='v'">
+                    <input type="button" id="letraW" class="borde" value="w"
+                        onclick="document.container.pantalla.value='w'">
+                    <input type="button" id="letraX" class="borde" value="x"
+                        onclick="document.container.pantalla.value='x'">
+                    <input type="button" id="letraY" class="borde" value="y"
+                        onclick="document.container.pantalla.value='y'">
+                    <input type="button" id="letraZ" class="borde" value="z"
+                        onclick="document.container.pantalla.value='z'">
+                    <input type="button" id="letraPP" class="" value="?">
+                </form>
+            </div>
+        </div>
+        <div class="mensajesJuego">
+            <h3 id="mensajeUsuario"> Intenta adivinar la palabra secreta</h3>
+            <h3 id="segundoMensaje"> Ingresa una letra para comenzar</h3>
+        </div>
+        <nav>
+            <div class='navegacion'>
+                <nav class="botonera">
+                    <button class="barraNav">
+                        <a href="./index.html" class="eleccion">Inicio</a>
+                    </button>
+                    <button class="barraNav">
+                        <a href="./personajes.html" class="eleccion">Cambiar Personaje</a>
+                    </button>
+                    <button class="barraNav">
+                        <a href="./ingame.html" class="eleccion">Jugar</a>
+                    </button>
+                </nav>
+            </div>
+    </main>
+    <footer></footer>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
